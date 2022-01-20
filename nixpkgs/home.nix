@@ -6,6 +6,10 @@
     ./services.nix
   ];
 
+  home.packages = [
+    pkgs.stack
+    pkgs.ghc
+  ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
