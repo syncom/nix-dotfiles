@@ -46,6 +46,8 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   
+  # Enable the docker service
+  virtualisation.docker.enable = true;
 
   # Configure keymap in X11
   # services.xserver.layout = "us";
@@ -66,7 +68,7 @@
     isNormalUser = true;
     home = "/home/nshang";
     description = "Ning Shang";
-    extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
   };
 
   # List packages installed in system profile. To search, run:
