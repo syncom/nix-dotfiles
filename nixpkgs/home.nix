@@ -8,10 +8,10 @@
 
   home.packages = [
     pkgs.stack
-    pkgs.ghc
     pkgs.gnumake
     pkgs.tmux
     pkgs.tree
+    pkgs.ihaskell
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
