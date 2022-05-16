@@ -12,6 +12,7 @@
     pkgs.tmux
     pkgs.tree
     pkgs.ihaskell
+    pkgs.neomutt
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
