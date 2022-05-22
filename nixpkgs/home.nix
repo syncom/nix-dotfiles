@@ -13,6 +13,7 @@
     pkgs.tree
     pkgs.ihaskell
     pkgs.neomutt
+    pkgs.w3m
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
