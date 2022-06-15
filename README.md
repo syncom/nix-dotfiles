@@ -6,7 +6,9 @@
     ```bash
     # sudo nixos-rebuild build # for test
     sudo nixos-rebuild swtich --upgrade
-    sudo nix-rebuild boot
+    sudo nixos-rebuild boot
+    # Optional
+    sudo nix-collect-garbage -d
     ```
 
 - nixpkgs: Home Manager configuration to go to ~/.config/
