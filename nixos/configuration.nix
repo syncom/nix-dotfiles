@@ -93,6 +93,9 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+  # Enable pcscd, for YubiKey support
+  services.pcscd.enable = true;
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
