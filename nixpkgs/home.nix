@@ -15,6 +15,7 @@
     pkgs.neomutt
     pkgs.w3m
     pkgs.texlive.combined.scheme-full
+    pkgs.slack
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
