@@ -18,6 +18,7 @@
     pkgs.slack
     pkgs.zoom-us
     pkgs.tailscale
+    pkgs.pinentry
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
