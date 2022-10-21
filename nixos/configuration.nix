@@ -93,11 +93,12 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
-  # Enable tailscale
-  services.tailscale.enable = true;
-
   # Enable pcscd, for YubiKey support
   services.pcscd.enable = true;
+
+  # Enable tailscale
+  services.tailscale.enable = true;
+  networking.firewall.checkReversePath = "loose";
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
