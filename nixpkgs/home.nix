@@ -17,6 +17,7 @@
     pkgs.texlive.combined.scheme-full
     pkgs.slack
     pkgs.zoom-us
+    pkgs.tailscale
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
