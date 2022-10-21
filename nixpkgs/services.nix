@@ -5,6 +5,7 @@
     enable = true;
     enableSshSupport = true;
     defaultCacheTtl = 1800;
-    pinentryFlavor = "tty";
+    # tty does not work, so comment out
+    #pinentryFlavor = "tty";
   };
 }
