@@ -93,6 +93,9 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
+  # Enable tailscale
+  services.tailscale.enable = true;
+
   # Enable pcscd, for YubiKey support
   services.pcscd.enable = true;
 
