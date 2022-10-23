@@ -19,6 +19,9 @@
     pkgs.zoom-us
     pkgs.tailscale
     pkgs.pinentry
+    pkgs.xclip
+    pkgs.file
+    pkgs.ispell
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
