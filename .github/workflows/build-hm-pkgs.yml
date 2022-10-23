@@ -1,0 +1,24 @@
+name: "home-manager package build check"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  hm-pkgs-build:
+    name: "hm-pkgs-build"
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v3
+      - name: "Test in Docker"
+        run: |
+          set -euxo pipefail
+          cd ${{ github.workspace }}/
+          docker build .
