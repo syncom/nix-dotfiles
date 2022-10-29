@@ -23,6 +23,8 @@
     pkgs.file
     pkgs.ispell
     pkgs.exiftool
+    pkgs.gimp
+    pkgs.imagemagick
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
