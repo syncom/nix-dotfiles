@@ -1,5 +1,7 @@
 # Nix configuration files
 
+[![home-manager build packages](https://github.com/syncom/nix-dotfiles/actions/workflows/build-hm-pkgs.yml/badge.svg)](https://github.com/syncom/nix-dotfiles/actions/workflows/build-hm-pkgs.yml)
+
 - Set up channels
 
   ```bash
