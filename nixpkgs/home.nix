@@ -25,6 +25,7 @@
     pkgs.exiftool
     pkgs.gimp
     pkgs.imagemagick
+    pkgs.openssl
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
