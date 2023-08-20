@@ -1,6 +1,11 @@
 { config, pkgs, ...}:
 
 {
+  # firefox
+  programs.firefox = {
+    enable = true;
+  };
+
   # chromium & extensions
   programs.chromium = {
     enable = true;
