@@ -20,5 +20,10 @@ jobs:
       - name: "Test in Docker"
         run: |
           set -euxo pipefail
+          # Workaround to get more free disk space
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf "/usr/local/share/boost"
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
           cd ${{ github.workspace }}/
           docker build .
