@@ -15,6 +15,7 @@ RUN mkdir -p ~/.config && \
   cp -r /home/nshang/nix-dotfiles/nixpkgs ~/.config/nixpkgs && \
   cp -r /home/nshang/nix-dotfiles/home-manager ~/.config/home-manager
 
-RUN home-manager build
+RUN nix-collect-garbage -d && \
+    home-manager build
 
 #RUN home-manager switch
