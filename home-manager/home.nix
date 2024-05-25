@@ -28,6 +28,7 @@
     pkgs.openssl
     pkgs.pari
     pkgs.vlc
+    pkgs.shellcheck
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
