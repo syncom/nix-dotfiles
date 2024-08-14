@@ -29,6 +29,10 @@
     pkgs.pari
     pkgs.vlc
     pkgs.shellcheck
+    pkgs.cmake
+    pkgs.clang
+    pkgs.autoconf
+    pkgs.automake
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
