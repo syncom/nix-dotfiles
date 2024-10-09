@@ -33,6 +33,7 @@
     pkgs.clang
     pkgs.autoconf
     pkgs.automake
+    pkgs.certstrap
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
