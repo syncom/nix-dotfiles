@@ -34,6 +34,7 @@
     pkgs.autoconf
     pkgs.automake
     pkgs.certstrap
+    pkgs.openscad
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
