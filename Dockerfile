@@ -1,11 +1,11 @@
 # This Dockerfile is for testing home-manager package building only
 # The following information is from https://hub.docker.com/r/nixos/nix/tags
-FROM nixos/nix:2.9.0@sha256:13b257cd42db29dc851f9818ea1bc2f9c7128c51fdf000971fa6058c66fbe4b6 as image_builder
+FROM nixos/nix:2.29.2@sha256:14d8425d83c027ad878430b57993cd65a65f3c64eae66bbd82805d62f878f39c AS image_builder
 
 WORKDIR "/home/nshang"
 
-# HM 23.11
-RUN nix-channel --add https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz home-manager && \
+# HM 25.05
+RUN nix-channel --add https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz home-manager && \
   nix-channel --update && \
   nix-env --install home-manager
 
@@ -16,7 +16,6 @@ RUN mkdir -p ~/.config && \
   cp -r /home/nshang/nix-dotfiles/nixpkgs ~/.config/nixpkgs && \
   cp -r /home/nshang/nix-dotfiles/home-manager ~/.config/home-manager
 
-RUN nix-collect-garbage -d && \
-    home-manager build
+RUN home-manager build
 
 #RUN home-manager switch

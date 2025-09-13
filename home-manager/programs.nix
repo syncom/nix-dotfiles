@@ -17,7 +17,7 @@
   # VS Code
   programs.vscode = {
     enable = true;
-    extensions = [
+    profiles.default.extensions = [
     ];
   };
 

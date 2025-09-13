@@ -17,7 +17,8 @@
     pkgs.texlive.combined.scheme-full
     pkgs.slack
     pkgs.zoom-us
-    pkgs.tailscale
+    # comment out tailscale due to some issue with 25.05
+    #pkgs.tailscale
     pkgs.pinentry
     pkgs.xclip
     pkgs.file
