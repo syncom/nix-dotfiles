@@ -7,7 +7,8 @@ WORKDIR "/home/nshang"
 # HM 23.11
 RUN nix-channel --add https://github.com/nix-community/home-manager/archive/release-23.11.tar.gz home-manager && \
   nix-channel --update && \
-  nix-env --install home-manager
+  nix-env --install home-manager && \
+  home-manager --version
 
 COPY . "/home/nshang/nix-dotfiles"
 
