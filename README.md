@@ -6,10 +6,10 @@
 
   ```bash
   # For NixOS. Run `sudo nix-channel --list` to check
-  sudo nix-channel --add https://nixos.org/channels/nixos-23.05 nixos
+  sudo nix-channel --add https://nixos.org/channels/nixos-25.05 nixos
   sudo nix-channel --update
   # For home-manager. Run `nix-channel --list` to check
-  nix-channel --add https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz home-manager
+  nix-channel --add https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz home-manager
   nix-channel --update
   ```
 

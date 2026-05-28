@@ -5,7 +5,6 @@
     enable = true;
     enableSshSupport = true;
     defaultCacheTtl = 1800;
-    # tty does not work, so comment out
-    #pinentryFlavor = "tty";
+    pinentry.package = pkgs.pinentry-tty;
   };
 }

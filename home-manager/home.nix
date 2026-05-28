@@ -17,7 +17,8 @@
     pkgs.texlive.combined.scheme-full
     pkgs.slack
     pkgs.zoom-us
-    pkgs.tailscale
+    # comment out tailscale due to some issue with 25.05
+    #pkgs.tailscale
     pkgs.pinentry
     pkgs.xclip
     pkgs.file
@@ -27,6 +28,16 @@
     pkgs.imagemagick
     pkgs.openssl
     pkgs.pari
+    pkgs.vlc
+    pkgs.shellcheck
+    pkgs.cmake
+    pkgs.clang
+    pkgs.autoconf
+    pkgs.automake
+    pkgs.certstrap
+    pkgs.openscad
+    pkgs.inkscape-with-extensions
+    pkgs.ditaa
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
