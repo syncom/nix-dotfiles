@@ -10,7 +10,8 @@ RUN nix-channel --remove home-manager && \
   nix-channel --remove nixpkgs && \
   nix-channel --add https://nixos.org/channels/nixos-25.05 nixpkgs && \
   nix-channel --update && \
-  nix-env --install home-manager
+  nix-env --install home-manager && \
+  home-manager --version
 
 COPY . "/home/nshang/nix-dotfiles"
 
