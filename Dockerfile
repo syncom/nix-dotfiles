@@ -5,7 +5,10 @@ FROM nixos/nix:2.29.2@sha256:14d8425d83c027ad878430b57993cd65a65f3c64eae66bbd828
 WORKDIR "/home/nshang"
 
 # HM 25.05
-RUN nix-channel --add https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz home-manager && \
+RUN nix-channel --remove home-manager && \
+  nix-channel --add https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz home-manager && \
+  nix-channel --remove nixpkgs && \
+  nix-channel --add https://nixos.org/channels/nixos-25.05 nixpkgs && \
   nix-channel --update && \
   nix-env --install home-manager
 
