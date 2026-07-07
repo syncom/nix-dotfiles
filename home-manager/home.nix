@@ -38,6 +38,7 @@
     pkgs.openscad
     pkgs.inkscape-with-extensions
     pkgs.ditaa
+    pkgs.brave
   ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
